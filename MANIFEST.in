@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include selling_management *.css
+recursive-include selling_management *.csv
+recursive-include selling_management *.html
+recursive-include selling_management *.ico
+recursive-include selling_management *.js
+recursive-include selling_management *.json
+recursive-include selling_management *.md
+recursive-include selling_management *.png
+recursive-include selling_management *.py
+recursive-include selling_management *.svg
+recursive-include selling_management *.txt
+recursive-exclude selling_management *.pyc
