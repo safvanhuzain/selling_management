@@ -1,6 +1,7 @@
 // Copyright (c) 2023, safvan and contributors
 // For license information, please see license.txt
 
+
 frappe.ui.form.on('Check Sales Order Status', {
 	refresh(frm){
 		frm.set_df_property("order_status", "hidden", 1);
