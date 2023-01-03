@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_copy": 1,
  "allow_rename": 1,
  "creation": "2023-01-02 19:54:57.763204",
  "doctype": "DocType",
@@ -31,13 +32,14 @@
   {
    "fieldname": "upload",
    "fieldtype": "Button",
-   "label": "Upload"
+   "label": "Read"
   }
  ],
+ "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2023-01-03 21:51:21.605398",
+ "modified": "2023-01-03 22:10:57.982498",
  "modified_by": "Administrator",
  "module": "Selling Management",
  "name": "Check Sales Order Status",
