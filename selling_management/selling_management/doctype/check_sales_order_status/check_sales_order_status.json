@@ -1,0 +1,59 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-01-02 19:54:57.763204",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "get_template",
+  "attach",
+  "upload",
+  "order_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "get_template",
+   "fieldtype": "Button",
+   "label": "Get Template"
+  },
+  {
+   "fieldname": "order_status",
+   "fieldtype": "HTML",
+   "label": "Order Status",
+   "options": "<table id=\"myTable\" style=\"width: 100%; text-align: center;\">\n<thead>\n<tr>\n<td class=\"text-center\"><b>Invoice</b></td>\n<td class=\"text-center\"><b>State</b></td>\n<td class=\"text-center\"><b>Amount</b></td>\n</tr>\n</thead>\n</table>\n<style>\ntable, th, td {\n  border: 1px solid;\n}\ntr:hover {background-color: grey;}\n</style>"
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach",
+   "label": "Attach"
+  },
+  {
+   "fieldname": "upload",
+   "fieldtype": "Button",
+   "label": "Upload"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2023-01-03 21:51:21.605398",
+ "modified_by": "Administrator",
+ "module": "Selling Management",
+ "name": "Check Sales Order Status",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}
