@@ -3,9 +3,9 @@
 
 import frappe
 from frappe.model.document import Document
-from frappe.utils.csvutils import UnicodeWriter
 from frappe.utils import cstr
-from frappe.utils.csvutils import get_csv_content_from_google_sheets, read_csv_content, read_csv_content_from_attached_file
+from frappe.utils.csvutils import (UnicodeWriter,
+                                   read_csv_content_from_attached_file)
 
 
 class CheckSalesOrderStatus(Document):
@@ -30,11 +30,10 @@ class CheckSalesOrderStatus(Document):
 				'name': ['in', order]
 			}, fields=['name', 'grand_total', 'status'])
 			return {'data': data, 'error_row': error_row}
-		except Exception as e:
-			frappe.msgprint(str('Could not Read File'))
+		except Exception:
 			frappe.log_error(str(frappe.get_traceback()), "Read File")
 
-		
+
 
 
 @frappe.whitelist()
